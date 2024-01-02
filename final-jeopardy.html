@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Final Jeopardy</title>
+  </head>
+  <body class="flex-container">
+    <header>
+      <div class="game-title">
+        <h1>Final Round</h1>
+      </div>
+    </header>
+    <main class="final-flex-grid">
+      <div class="player-turn">
+        <h2>Peter</h2>
+      </div>
+      <div class="final-category">
+        <h3>FINAL CATEGORY</h3>
+      </div>
+      <div class="final-question-container">
+        <div class="final-question">
+          <h4>FINAL QUESTION</h4>
+        </div>
+      </div>
+      <form action="/action_page.php">
+        <input
+          type="text"
+          class="bet-amount"
+          name="bet"
+          placeholder="Point bet amount"
+        /><br />
+        <input
+          type="text"
+          class="final"
+          name="answer"
+          placeholder="Final answer..."
+        /><br />
+        <input class="bet" type="submit" value="BET" id="BET" />
+      </form>
+    </main>
+    <footer>
+      <p>Jeopardy Copyright &copy; 2023</p>
+    </footer>
+    <script src="./scripts/index.js" type="module"></script>
+  </body>
+</html>
