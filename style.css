@@ -23,7 +23,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center
+  text-align: center;
 }
 
 .game-title {
@@ -57,7 +57,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 99%;
-  min-height: 250px; 
+  min-height: 250px;
   border-collapse: collapse;
   min-width: 400px;
   background-color: whitesmoke;
@@ -110,7 +110,7 @@ tr {
   margin: 5px;
 }
 
-.bet-amount{
+.bet-amount {
   margin-top: 30px;
 }
 
