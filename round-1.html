@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Metadata for character set, compatibility, and responsiveness -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Title of the webpage -->
     <title>Jeopardy</title>
   </head>
   <body class="flex-container-first-round-body">
+    <!-- Header section of the webpage -->
     <header>
       <div class="game-title">
+        <!-- Title for the first round of the game -->
         <h1>First Round</h1>
       </div>
     </header>
+
+    <!-- Main content area -->
     <main class="flex-grid">
+      <!-- Displaying the current player's turn -->
       <div class="player-turn">
         <h2>Peter</h2>
+        <!-- Name of the player -->
       </div>
+
+      <!-- Table for the Jeopardy game board -->
       <table class="jeopardy-table">
         <thead>
           <tr>
@@ -69,25 +82,39 @@
           <th>1000</th>
         </tr>
       </table>
+      <!-- Container for form elements -->
       <div class="apg">
-      <form action="/action_page.php">
-        <input type="text" name="answer" placeholder="Answer..." /><br />
-        <input type="submit" value="guess" id="guess" class="guess-button" />
-        <input type="submit" value="pass" id="pass" class="pass-button" />
-      </form>
+        <!-- Form for submitting answers -->
+        <form action="/action_page.php">
+          <input type="text" name="answer" placeholder="Answer..." /><br />
+          <!-- Buttons for guessing or passing -->
+          <input type="submit" value="guess" id="guess" class="guess-button" />
+          <input type="submit" value="pass" id="pass" class="pass-button" />
+        </form>
       </div>
+
+      <!-- Display of player scores -->
       <div>
         <span class="player1-score">Player 1 Score: 0</span>
         <span class="player2-score">Player 2 Score: 0</span>
       </div>
+
+      <!-- Container for the button to proceed to the next round -->
       <div class="next-button-container">
         <button class="next-button">
           <a href="round-2.html">Next<br />Round</a>
+          <!-- Link to the next round -->
         </button>
+      </div>
     </main>
+
+    <!-- Footer section -->
     <footer class="first-round-footer">
+      <!-- Copyright information -->
       <p>Jeopardy Copyright &copy; 2023</p>
     </footer>
+
+    <!-- Link to external JavaScript file -->
     <!-- Do not change the script source. Allows import/export to work. -->
     <script src="./scripts/index.js" type="module"></script>
   </body>

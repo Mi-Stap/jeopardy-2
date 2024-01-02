@@ -1,93 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Metadata section for character set, compatibility, and responsive design -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link to the external CSS stylesheet -->
     <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Title of the webpage -->
     <title>Jeopardy</title>
   </head>
   <body class="flex-container-second-round-body">
+    <!-- Header section of the webpage -->
     <header>
       <div class="game-title">
+        <!-- Title for the second round of the game -->
         <h1>Second Round</h1>
       </div>
     </header>
+
+    <!-- Main content area -->
     <main class="flex-grid">
+      <!-- Displaying the current player's turn -->
       <div class="player-turn">
         <h2>Sophie</h2>
+        <!-- Name of the player currently playing -->
       </div>
+
+      <!-- Table for the Jeopardy game board for the second round -->
       <table class="jeopardy-table">
         <thead>
-            <tr>
-              <th>shows</th>
-              <th>shoes</th>
-              <th>games</th>
-              <th>trees</th>
-              <th>clubs</th>
-              <th>books</th>
-            </tr>
-          </thead>
           <tr>
-            <th>400</th>
-            <th>400</th>
-            <th>400</th>
-            <th>400</th>
-            <th>400</th>
-            <th>400</th>
+            <th>shows</th>
+            <th>shoes</th>
+            <th>games</th>
+            <th>trees</th>
+            <th>clubs</th>
+            <th>books</th>
           </tr>
-          <tr>
-            <th>800</th>
-            <th>800</th>
-            <th>800</th>
-            <th>800</th>
-            <th>800</th>
-            <th>800</th>
-          </tr>
-          <tr>
-            <th>1200</th>
-            <th>1200</th>
-            <th>1200</th>
-            <th>1200</th>
-            <th>1200</th>
-            <th>1200</th>
-          </tr>
-          <tr>
-            <th>1600</th>
-            <th>1600</th>
-            <th>1600</th>
-            <th>1600</th>
-            <th>1600</th>
-            <th>1600</th>
-          </tr>
-          <tr>
-            <th>2000</th>
-            <th>2000</th>
-            <th>2000</th>
-            <th>2000</th>
-            <th>2000</th>
-            <th>2000</th>
-          </tr>
+        </thead>
+        <tr>
+          <th>400</th>
+          <th>400</th>
+          <th>400</th>
+          <th>400</th>
+          <th>400</th>
+          <th>400</th>
+        </tr>
+        <tr>
+          <th>800</th>
+          <th>800</th>
+          <th>800</th>
+          <th>800</th>
+          <th>800</th>
+          <th>800</th>
+        </tr>
+        <tr>
+          <th>1200</th>
+          <th>1200</th>
+          <th>1200</th>
+          <th>1200</th>
+          <th>1200</th>
+          <th>1200</th>
+        </tr>
+        <tr>
+          <th>1600</th>
+          <th>1600</th>
+          <th>1600</th>
+          <th>1600</th>
+          <th>1600</th>
+          <th>1600</th>
+        </tr>
+        <tr>
+          <th>2000</th>
+          <th>2000</th>
+          <th>2000</th>
+          <th>2000</th>
+          <th>2000</th>
+          <th>2000</th>
+        </tr>
       </table>
+      <!-- Container for form elements to submit an answer -->
       <div class="apg">
-      <form action="/action_page.php">
-        <input type="text" name="answer" placeholder="Answer..." /><br />
-        <input type="submit" value="guess" id="guess" class="guess-button" />
-        <input type="submit" value="pass" id="pass" class="pass-button" />
-      </form>
+        <!-- Form for submitting answers -->
+        <form action="/action_page.php">
+          <input type="text" name="answer" placeholder="Answer..." /><br />
+          <!-- Buttons for submitting a guess or passing -->
+          <input type="submit" value="guess" id="guess" class="guess-button" />
+          <input type="submit" value="pass" id="pass" class="pass-button" />
+        </form>
       </div>
+
+      <!-- Display of player scores -->
       <div>
         <span class="player1-score">Player 1 Score: 0</span>
         <span class="player2-score">Player 2 Score: 0</span>
       </div>
-      <div class="next-button-container"> 
-        <button class="next-button"> 
-          <a href="final-jeopardy.html">Next<br />Round</a> 
+
+      <!-- Container for the button to proceed to the final round -->
+      <div class="next-button-container">
+        <button class="next-button">
+          <a href="final-jeopardy.html">Next<br />Round</a>
+          <!-- Link to the final round -->
         </button>
+      </div>
     </main>
-    <footer class="first-round-footer"> 
+
+    <!-- Footer section of the page -->
+    <footer class="first-round-footer">
+      <!-- Copyright information -->
       <p>Jeopardy Copyright &copy; 2023</p>
     </footer>
+
+    <!-- Link to external JavaScript file -->
     <!-- Do not change the script source. Allows import/export to work. -->
     <script src="./scripts/index.js" type="module"></script>
   </body>

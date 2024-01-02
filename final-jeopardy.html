@@ -1,49 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Metadata for character set, browser compatibility, and responsiveness -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Title of the webpage -->
     <title>Final Jeopardy</title>
   </head>
   <body class="flex-container">
+    <!-- Header section of the webpage -->
     <header>
       <div class="game-title">
+        <!-- Title for the final round of the game -->
         <h1>Final Round</h1>
       </div>
     </header>
+
+    <!-- Main content area -->
     <main class="final-flex-grid">
+      <!-- Displaying the current player's turn -->
       <div class="player-turn">
         <h2>Peter</h2>
+        <!-- Name of the player currently playing -->
       </div>
+
+      <!-- Display of the final category -->
       <div class="final-category">
         <h3>FINAL CATEGORY</h3>
+        <!-- Placeholder for the final jeopardy category -->
       </div>
+
+      <!-- Container for the final question -->
       <div class="final-question-container">
         <div class="final-question">
           <h4>FINAL QUESTION</h4>
+          <!-- Placeholder for the final jeopardy question -->
         </div>
       </div>
+
+      <!-- Form for submitting the final bet and answer -->
       <form action="/action_page.php">
+        <!-- Input for the bet amount -->
         <input
           type="text"
           class="bet-amount"
           name="bet"
           placeholder="Point bet amount"
         /><br />
+        <!-- Input for the final answer -->
         <input
           type="text"
           class="final"
           name="answer"
           placeholder="Final answer..."
         /><br />
+        <!-- Submit button for the bet -->
         <input class="bet" type="submit" value="BET" id="BET" />
       </form>
     </main>
+
+    <!-- Footer section of the page -->
     <footer>
+      <!-- Copyright information -->
       <p>Jeopardy Copyright &copy; 2023</p>
     </footer>
+
+    <!-- Link to external JavaScript file -->
     <script src="./scripts/index.js" type="module"></script>
   </body>
 </html>
